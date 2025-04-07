@@ -1,5 +1,5 @@
 # 👋 Hi, We're **Kelompok 10**  
-🚀 **Web Developers | CV Project Team | Digital Creators**  
+🚀 **Tugas pengembangan perangkat lunak**  
 
 ## 👥 Team Members
 | <img src="https://media.stickerswiki.app/moyai_stones/2014977.512.webp" width="100" alt="Dedi"> | <img src="https://media.stickerswiki.app/moyai_stones/2014979.512.webp" width="100" alt="Enjel"> | <img src="https://media.stickerswiki.app/emotbatuyyz/38339.512.webp" width="100" alt="Matthew"> |
