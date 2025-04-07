@@ -2,7 +2,7 @@
 🚀 **Web Developers | CV Project Team | Digital Creators**  
 
 ## 👥 Team Members
-| <img src="https://mmc.tirto.id/image/2024/11/18/ilustrasi-emoji-batu_ratio-16x9.jpg" width="100" alt="Dedi"> | <img src="https://i.pinimg.com/736x/88/46/7c/88467cf40fc42ec788311f305cfe4831.jpg" width="100" alt="Enjel"> | <img src="https://mmc.tirto.id/image/2024/11/18/ilustrasi-emoji-batu_ratio-16x9.jpg" alt="Matthew"> |
+| <img src="https://media.stickerswiki.app/moyai_stones/2014977.512.webp" width="100" alt="Dedi"> | <img src="https://media.stickerswiki.app/moyai_stones/2014979.512.webp" width="100" alt="Enjel"> | <img src="https://media.stickerswiki.app/emotbatuyyz/38339.512.webp" width="100" alt="Matthew"> |
 |----------|----------|----------|
 | **Dedi Sanjaya Nainggolan** | **Enjel Boyzest Saragih** | **Matthew Rivandy** |
 
