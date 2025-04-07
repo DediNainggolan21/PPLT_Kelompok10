@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enjel Boyzest | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              montserrat: ['Montserrat', 'sans-serif'],
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'text-reveal-box': 'textRevealBox 1s ease forwards',
+              'text-reveal': 'textReveal 0.5s ease forwards',
+              'text-reveal-name': 'textRevealName 0.5s ease forwards',
+            },
+            keyframes: {
+              textRevealBox: {
+                '50%': { width: '100%', left: '0' },
+                '100%': { width: '0', left: '100%' },
+              },
+              textReveal: {
+                '100%': { color: 'white' },
+              },
+              textRevealName: {
+                '100%': { color: '#dc2626', fontWeight: '500' },
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .bg-anime-pattern {
+          background-image: url('./image/1231245.png');
+        }
+        .bg-service-item {
+          background-image: url('./image/1247475.png');
+        }
+      }
+    </style>
+  </head>
+  <body class="font-montserrat scroll-smooth">
+    <!-- Header -->
+    <header id="header" class="fixed w-full z-50 transition-colors duration-300">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="brand">
+            <a href="#hero" class="text-3xl font-bold text-white">
+              <span class="text-red-600">E</span>njel <span class="text-red-600">B</span>oyzest
+            </a>
+          </div>
+          <!-- Desktop menu -->
+          <nav class="hidden md:block">
+            <ul class="flex space-x-8">
+              <li><a href="#hero" class="text-white text-lg hover:text-red-600 transition-colors" data-after="Home">Home</a></li>
+              <li><a href="#services" class="text-white text-lg hover:text-red-600 transition-colors" data-after="Services">Services</a></li>
+              <li><a href="#projects" class="text-white text-lg hover:text-red-600 transition-colors" data-after="Projects">Projects</a></li>
+              <li><a href="#about" class="text-white text-lg hover:text-red-600 transition-colors" data-after="About">About</a></li>
+              <li><a href="#contact" class="text-white text-lg hover:text-red-600 transition-colors" data-after="Contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center bg-anime-pattern bg-cover bg-top bg-no-repeat clip-path-hero md:clip-path-hero-md">
+      <div class="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
+      <div class="container mx-auto px-6 z-10">
+        <div class="max-w-3xl">
+          <h1 class="text-5xl md:text-7xl font-bold mb-4 text-transparent relative overflow-hidden">
+            <span class="absolute top-0 left-0 h-full w-0 bg-red-600 animate-[text-reveal-box_1s_ease_forwards]"></span>
+            <span class="animate-[text-reveal_0.5s_ease_forwards_1s]">Hello,</span>
+          </h1>
+          <h1 class="text-5xl md:text-7xl font-bold mb-4 text-transparent relative overflow-hidden">
+            <span class="absolute top-0 left-0 h-full w-0 bg-red-600 animate-[text-reveal-box_1s_ease_forwards] delay-1000"></span>
+            <span class="animate-[text-reveal_0.5s_ease_forwards_2s]">My Name is</span>
+          </h1>
+          <h1 class="text-5xl md:text-7xl font-bold mb-8 text-transparent relative overflow-hidden">
+            <span class="absolute top-0 left-0 h-full w-0 bg-red-600 animate-[text-reveal-box_1s_ease_forwards] delay-[1.5s]"></span>
+            <span class="animate-[text-reveal-name_0.5s_ease_forwards_3s]">Boyzest</span>
+          </h1>
+          <a href="#projects" class="inline-block border-2 border-red-600 text-white px-8 py-4 text-xl uppercase tracking-widest mt-12 hover:bg-red-600 hover:text-white transition-colors duration-300">
+            Portfolio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+      <section id="services" class="py-20">
+        <div class="container mx-auto px-6">
+          <div class="text-center max-w-2xl mx-auto mb-16">
+            <h1 class="text-4xl md:text-6xl font-light uppercase mb-4">
+              Serv<span class="text-red-600">i</span>ces
+            </h1>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit...
+            </p>
+          </div>
+      
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-service-item bg-cover rounded-xl p-8 relative overflow-hidden group">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-800/60 to-transparent z-0"></div>
+      
+              <div class="relative z-10">
+                <div class="w-20 h-20 mb-6">
+                  <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Service Icon" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-2xl text-white uppercase mb-4">Web Design</h2>
+                <p class="text-gray-300 text-left">
+                  Lorem ipsum dolor sit amet consectetur...
+                </p>
+              </div>
+            </div>
+      
+            <div class="bg-service-item bg-cover rounded-xl p-8 relative overflow-hidden group">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-800/60 to-transparent z-0"></div>
+              <div class="relative z-10">
+                <div class="w-20 h-20 mb-6">
+                  <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Service Icon" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-2xl text-white uppercase mb-4">UI/UX Design</h2>
+                <p class="text-gray-300 text-left">
+                  Lorem ipsum dolor sit amet consectetur...
+                </p>
+              </div>
+            </div>
+      
+            <div class="bg-service-item bg-cover rounded-xl p-8 relative overflow-hidden group">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-800/60 to-transparent z-0"></div>
+              <div class="relative z-10">
+                <div class="w-20 h-20 mb-6">
+                  <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Service Icon" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-2xl text-white uppercase mb-4">Frontend Dev</h2>
+                <p class="text-gray-300 text-left">
+                  Lorem ipsum dolor sit amet consectetur...
+                </p>
+              </div>
+            </div>
+      
+            <div class="bg-service-item bg-cover rounded-xl p-8 relative overflow-hidden group">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-800/60 to-transparent z-0"></div>
+              <div class="relative z-10">
+                <div class="w-20 h-20 mb-6">
+                  <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Service Icon" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-2xl text-white uppercase mb-4">Backend dev</h2>
+                <p class="text-gray-300 text-left">
+                  Lorem ipsum dolor sit amet consectetur...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h1 class="text-4xl md:text-6xl font-light uppercase">
+            RECENT <span class="text-red-600">PROJECTS</span>
+          </h1>
+        </div>
+        
+        <div class="space-y-12">
+          <div class="flex flex-col lg:flex-row rounded-xl overflow-hidden shadow-xl group">
+            <div class="lg:w-1/2 p-8 bg-gradient-to-br from-gray-800 to-gray-700">
+              <h1 class="text-4xl text-white font-medium mb-2">Project 1</h1>
+              <h2 class="text-xl text-red-400 mb-4">Project 1</h2>
+              <p class="text-gray-300">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore corporis explicabo doloribus distinctio sapiente quidem quia omnis, ullam debitis voluptatibus.
+              </p>
+            </div>
+            <div class="lg:w-1/2 relative overflow-hidden">
+              <img src="./image/1234928.jpg" alt="Project 1" class="w-full h-64 lg:h-full object-cover transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-700 opacity-30"></div>
+            </div>
+          </div>
+          
+          <div class="flex flex-col lg:flex-row-reverse rounded-xl overflow-hidden shadow-xl group">
+            <div class="lg:w-1/2 p-8 bg-gradient-to-br from-gray-800 to-gray-700">
+              <h1 class="text-4xl text-white font-medium mb-2">Project 2</h1>
+              <h2 class="text-xl text-red-400 mb-4">Project 2</h2>
+              <p class="text-gray-300">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore corporis explicabo doloribus distinctio sapiente quidem quia omnis, ullam debitis voluptatibus.
+              </p>
+            </div>
+            <div class="lg:w-1/2 relative overflow-hidden">
+              <img src="./image/1234928.jpg" alt="Project 2" class="w-full h-64 lg:h-full object-cover transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-700 opacity-30"></div>
+            </div>
+          </div>
+          
+          <div class="flex flex-col lg:flex-row rounded-xl overflow-hidden shadow-xl group">
+            <div class="lg:w-1/2 p-8 bg-gradient-to-br from-gray-800 to-gray-700">
+              <h1 class="text-4xl text-white font-medium mb-2">Project 3</h1>
+              <h2 class="text-xl text-red-400 mb-4">Project 3</h2>
+              <p class="text-gray-300">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore corporis explicabo doloribus distinctio sapiente quidem quia omnis, ullam debitis voluptatibus.
+              </p>
+            </div>
+            <div class="lg:w-1/2 relative overflow-hidden">
+              <img src="./image/1234928.jpg" alt="Project 3" class="w-full h-64 lg:h-full object-cover transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-700 opacity-30"></div>
+            </div>
+          </div>
+          
+          <div class="flex flex-col lg:flex-row-reverse rounded-xl overflow-hidden shadow-xl group">
+            <div class="lg:w-1/2 p-8 bg-gradient-to-br from-gray-800 to-gray-700">
+              <h1 class="text-4xl text-white font-medium mb-2">Project 4</h1>
+              <h2 class="text-xl text-red-400 mb-4">Project 4</h2>
+              <p class="text-gray-300">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore corporis explicabo doloribus distinctio sapiente quidem quia omnis, ullam debitis voluptatibus.
+              </p>
+            </div>
+            <div class="lg:w-1/2 relative overflow-hidden">
+              <img src="./image/1234928.jpg" alt="Project 4" class="w-full h-64 lg:h-full object-cover transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-700 opacity-30"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/3 mb-12 lg:mb-0 lg:pr-12 relative">
+            <div class="w-64 h-96 mx-auto">
+              <img src="./image/ChatGPT Image Apr 7, 2025, 07_55_54 PM.png" alt="Boyzest" class="w-full h-full object-cover border-8 border-white">
+            </div>
+            <div class="absolute -left-6 top-6 w-64 h-96 border-4 border-red-600 -z-10"></div>
+          </div>
+          
+          <div class="lg:w-2/3">
+            <h1 class="text-4xl md:text-6xl font-light uppercase mb-6">
+              About <span class="text-red-600">me</span>
+            </h1>
+            <h2 class="text-xl font-medium uppercase tracking-wider mb-6">I am the Code itself...:V</h2>
+            <p class="text-gray-700 mb-8">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quibusdam nisi tempora placeat non provident molestiae, velit consequuntur necessitatibus nostrum ea quos, nesciunt molestias culpa quis repellat! Repellendus ut a in, est eveniet quasi doloribus. Expedita porro doloribus reiciendis! Alias sequi distinctio natus odit reiciendis ut repudiandae nobis dolorum incidunt.
+            </p>
+            <a href="#" class="inline-block border-2 border-red-600 text-red-600 px-6 py-3 text-lg uppercase tracking-widest hover:bg-red-600 hover:text-white transition-colors duration-300">
+              Download Cv
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h1 class="text-4xl md:text-6xl font-light uppercase">
+            Contact <span class="text-red-600">Info</span>
+          </h1>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+            <div class="w-16 h-16 mx-auto mb-6">
+              <img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="Phone" class="w-full h-full object-contain">
+            </div>
+            <h1 class="text-2xl font-medium mb-4">Phone</h1>
+            <h2 class="text-gray-600">+62 823 8076 3865</h2>
+            <h2 class="text-gray-600">+62 812 6017 2485</h2>
+          </div>
+          
+          <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+            <div class="w-16 h-16 mx-auto mb-6">
+              <img src="https://img.icons8.com/bubbles/100/000000/new-post.png" alt="Email" class="w-full h-full object-contain">
+            </div>
+            <h1 class="text-2xl font-medium mb-4">Email</h1>
+            <h2 class="text-gray-600">boyzestsumbayak@gmail.com</h2>
+            <h2 class="text-gray-600">boyzestsaragih@gmail.com</h2>
+          </div>
+          
+          <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+            <div class="w-16 h-16 mx-auto mb-6">
+              <img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt="Address" class="w-full h-full object-contain">
+            </div>
+            <h1 class="text-2xl font-medium mb-4">Address</h1>
+            <h2 class="text-gray-600">Talun Hapolsit, Bahapal Raya</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-gradient-to-br from-gray-800 to-gray-700 text-white pt-20 pb-10 clip-path-footer md:clip-path-footer-md">
+      <div class="container mx-auto px-6 text-center">
+        <div class="mb-8">
+          <h1 class="text-3xl font-bold">
+            <span class="text-red-600">E</span>njel <span class="text-red-600">B</span>oyzest
+          </h1>
+        </div>
+        
+        <h2 class="text-xl mb-8">Talk is cheap, show me the code</h2>
+        
+        <div class="flex justify-center space-x-6 mb-8">
+          <a href="https://www.facebook.com/kemem.uab.5682944" target="_blank" class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center hover:bg-red-600 transition-colors duration-300">
+            <img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" alt="Facebook" class="w-8 h-8 filter grayscale hover:grayscale-0 transition-all duration-300">
+          </a>
+          <a href="https://www.instagram.com/boyzest_saragih/" target="_blank" class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center hover:bg-red-600 transition-colors duration-300">
+            <img src="https://img.icons8.com/bubbles/50/000000/instagram-new.png" alt="Instagram" class="w-8 h-8 filter grayscale hover:grayscale-0 transition-all duration-300">
+          </a>
+          <a href="https://t.me/Boyzest" target="_blank" class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center hover:bg-red-600 transition-colors duration-300">
+            <img src="https://img.icons8.com/bubbles/50/000000/telegram-app.png" alt="Telegram" class="w-8 h-8 filter grayscale hover:grayscale-0 transition-all duration-300">
+          </a>
+          <a href="https://wa.me/+6282380763865" target="_blank" class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center hover:bg-red-600 transition-colors duration-300">
+            <img src="https://img.icons8.com/bubbles/50/000000/whatsapp.png" alt="WhatsApp" class="w-8 h-8 filter grayscale hover:grayscale-0 transition-all duration-300">
+          </a>
+        </div>
+        
+        <p class="text-gray-400">Copyright &copy; 2022 Enjel.</p>
+      </div>
+    </footer>
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const header = document.getElementById('header');
+        if (window.scrollY > 250) {
+          header.classList.add('bg-gray-800');
+          header.classList.remove('bg-transparent');
+        } else {
+          header.classList.remove('bg-gray-800');
+          header.classList.add('bg-transparent');
+        }
+      });
+    </script>
+  </body>
+</html>
