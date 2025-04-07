@@ -2,7 +2,7 @@
 🚀 **Web Developers | CV Project Team | Digital Creators**  
 
 ## 👥 Team Members
-| <img src="https://via.placeholder.com/100" width="100" alt="Dedi"> | <img src="[https://via.placeholder.com/100](https://pin.it/6YKkAvQaq)" width="100" alt="Enjel"> | <img src="https://via.placeholder.com/100" width="100" alt="Matthew"> |
+| <img src="https://via.placeholder.com/100" width="100" alt="Dedi"> | <img src="https://mmc.tirto.id/image/2024/11/18/ilustrasi-emoji-batu_ratio-16x9.jpg" width="100" alt="Enjel"> | <img src="https://via.placeholder.com/100" width="100" alt="Matthew"> |
 |----------|----------|----------|
 | **Dedi Sanjaya Nainggolan** | **Enjel Boyzest Saragih** | **Matthew Rivandy** |
 
