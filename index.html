@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Cards with Particle Background</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+        
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #0f172a;
+            z-index: -1;
+        }
+        
+        .floating-card {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .card-glow {
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+    <div id="particles-js"></div>
+
+    <div class="container mx-auto px-4 py-8 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Card 1 -->
+            <div class="floating-card bg-gray-800 rounded-xl shadow-xl p-6 transform transition-all duration-500 hover:scale-105 card-glow">
+                <div class="relative overflow-hidden rounded-lg">
+                    <img src="https://wallpapercave.com/wp/wp10509478.jpg" width="100" alt="Card 1" class="w-full h-48 object-cover rounded-lg hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-white mb-3">Enjel Boyzest Saragih</h3>
+                    <p class="text-gray-400 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, maxime!</p>
+                    <a href="./CV-Enjel//index.html" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 group transition-colors">
+                        <span class="mr-2">About Me</span>
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="floating-card bg-gray-800 rounded-xl shadow-xl p-6 transform transition-all duration-500 hover:scale-105 card-glow" style="animation-delay: 0.5s">
+                <div class="relative overflow-hidden rounded-lg">
+                    <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/07/one-piece-shojo-cliches.jpg" alt="Card 2" class="w-full h-48 object-cover rounded-lg hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-white mb-3">Dedi Sanjaya Nainggolan</h3>
+                    <p class="text-gray-400 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, commodi.</p>
+                    <a href="./CV-Dedi/index.html" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 group transition-colors">
+                        <span class="mr-2">About Me</span>
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="floating-card bg-gray-800 rounded-xl shadow-xl p-6 transform transition-all duration-500 hover:scale-105 card-glow" style="animation-delay: 1s">
+                <div class="relative overflow-hidden rounded-lg">
+                    <img src="https://wallpapers.com/images/hd/sanji-4k-fbeq1phkw8x5s1r7.jpg" alt="Card 3" class="w-full h-48 object-cover rounded-lg hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-white mb-3">Matthew Rivandy</h3>
+                    <p class="text-gray-400 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, dolorem.</p>
+                    <a href="./CV-Matthew/index.html" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 group transition-colors">
+                        <span class="mr-2">About Me</span>
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80 },
+                color: { value: '#6366f1' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: true,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
